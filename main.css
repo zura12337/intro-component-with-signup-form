@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+  background: url("images/bg-intro-desktop.png") hsl(0, 100%, 74%) ;
+  color: white;
+}
+.row{
+  width: 30%;
+  text-align: left;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+}
+.row h1{
+  font-size: 40px;
+  font-weight: 700;
+}
