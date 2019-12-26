@@ -3,17 +3,170 @@
   padding: 0;
   font-family: "Poppins";
   font-weight: 500;
-  background: url("images/bg-intro-desktop.png") hsl(0, 100%, 74%) ;
   color: white;
 }
+body{
+  background: url("images/bg-intro-desktop.png") hsl(0, 100%, 74%) ;
+}
+.container{
+  display: flex;
+  margin-top: 8%;
+}
 .row{
-  width: 30%;
+  width: 40%;
   text-align: left;
-  position: absolute;
-  top: 40%;
-  left: 8%;
+  position: relative;
+  left: 12%;
+  top: 80px;
 }
 .row h1{
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
+}
+.row p{
+  font-weight: 400;
+}
+.form{
+  margin-left: 15%;
+  width: 35%;
+}
+.form-main{
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: -100px;
+  position: relative;
+  top: -5%;
+}
+.form-start h4{
+  background: hsl(248, 32%, 49%);
+  margin-bottom: 50px;
+  color:white;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px hsla(249, 10%, 26%, .4);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+bold{
+  font-weight: 700;
+}
+.form p{
+  color:hsl(249, 10%, 26%);
+}
+.form p a{
+  color: hsl(0, 100%, 74%) ;
+  text-decoration: none;
+  transition: .5s;
+}
+.form p a:hover{
+  color: hsl(0, 100%, 44%);
+}
+span{
+  font-size: 12px;
+  color: hsl(0, 100%, 74%) ;
+  position: relative;
+  left: 54%;
+  width: 50%;
+}
+
+#error-3{
+  width: 25px;
+  height: auto;
+  position: absolute;
+  left: 84%;
+  top: 45.4%;
+}
+#error-4{
+  width: 25px;
+  height: auto;
+  position: absolute;
+  left: 84%;
+  top: 63%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.name{
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  margin: 10px 20px;
+  outline: 0;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  background: none;
+}
+.name:focus{
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.last-name {
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  margin: 10px 20px;
+  outline: 0;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.last-name:focus{
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.mail{
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  margin: 10px 20px;
+  outline: 0;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.mail:focus{
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.pass{
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  margin: 10px 20px;
+  outline: 0;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.pass:focus{
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.main-btn{
+  margin: 10px 20px;
+  background: hsl(154, 59%, 51%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 5px hsl(154, 59%, 41%);
+  transition: .5s ease;
+  outline: none;
+}
+.main-btn:hover{
+  background: hsla(154, 59%, 51%, .7);
+  box-shadow: 0 5px hsla(154, 59%, 41%, .7);
+}
+.main-btn:focus{
+  background: hsl(154, 59%, 47%);
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+.form-main p{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
 }

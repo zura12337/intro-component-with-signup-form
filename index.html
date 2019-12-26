@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
@@ -21,18 +21,26 @@
     </div>
       <div class="form">
         <div class="form-start">
-          <h4>Try it free 7 days then $20/mo. thereafter</h4>
+          <h4><bold>Try it free 7 days</bold> then $20/mo. thereafter</h4>
         </div>
+        <div class="form-main">
         <form>
-          <input type="text" name="name" class="name" placeholder="First Name" required/>
-          <input type="text" name="last-name" class="last-name" placeholder="Last Name" required/>
-          <input type="mail" name="email" class="mail" placeholder="Email Address" required/>
-          <input type="pass" name="password" class="pass" placeholder="Password" required/>
+          <input type="text" name="name" class="name" id="name" placeholder="First Name" required/>
+          <span id="name-error">First Name cannot be empty.</span>
+          <input type="text" name="last-name" class="last-name" id="last-name" placeholder="Last Name" required/>
+          <span id="last-name-error">Last Name cannot be empty.</span>
+          <input type="email" name="email" class="mail" id="email" placeholder="Email Address" required/>
+          <span id="mail-error">Looks like this is not an email</span>
+          <input type="password" name="password" class="pass" id="pass" placeholder="Password" required/>
+          <span id="password-error">Password can not be empty</span>
 
-          <button class="main-btn">Claim your free trial</button>
+
+          <button id="submit" class="main-btn">Claim your free trial</button>
         </form>
         <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
     </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
